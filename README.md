@@ -17,8 +17,7 @@ An interactive Snake & Ladder game built using **HTML, CSS, and JavaScript** wit
 ---
 ## 🖼️ Game Screenshot
 
-![Game Screenshot](images/snake-ladder.png)
-
+![Game Screenshot](images/snake-ladder-game.png)
 ---
 
 ## 🚀 How to Run
