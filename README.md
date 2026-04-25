@@ -15,10 +15,9 @@ An interactive Snake & Ladder game built using **HTML, CSS, and JavaScript** wit
 - 🎯 Win detection
 
 ---
-
 ## 🖼️ Game Screenshot
 
-![Game Screenshot](screenshot.png)
+![Game Screenshot](images/snake-ladder.png)
 
 ---
 
