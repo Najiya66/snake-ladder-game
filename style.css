@@ -1,0 +1,85 @@
+body {
+    font-family: Arial;
+    background: #0f172a;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* BOARD */
+#board {
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    border: 4px solid #22c55e;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    position: relative;
+}
+
+/* checker pattern */
+.cell:nth-child(odd) {
+    background: #d9f99d;
+}
+.cell:nth-child(even) {
+    background: #a3e635;
+}
+
+/* PANEL */
+.panel {
+    width: 220px;
+    background: #1e293b;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* players */
+.player-box {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.red { background: #7f1d1d; }
+.green { background: #14532d; }
+
+/* log */
+#log {
+    height: 150px;
+    overflow-y: auto;
+    background: black;
+    padding: 5px;
+    font-size: 12px;
+}
+
+/* players */
+.p1 {
+    width: 14px;
+    height: 14px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 2px;
+    left: 2px;
+}
+
+.p2 {
+    width: 14px;
+    height: 14px;
+    background: green;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+}

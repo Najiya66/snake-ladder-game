@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Snake & Ladder Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🐍 SNAKE & LADDER</h1>
+
+<div class="container">
+
+    <!-- LEFT: BOARD -->
+    <div id="board"></div>
+
+    <!-- RIGHT: SIDE PANEL -->
+    <div class="panel">
+
+        <div class="player-box red">
+            <h3>Player 1</h3>
+            <p id="p1pos">Position: 1</p>
+        </div>
+
+        <div class="player-box green">
+            <h3>Player 2</h3>
+            <p id="p2pos">Position: 1</p>
+        </div>
+
+        <button onclick="rollDice()">🎲 Roll Dice</button>
+
+        <p id="dice">Dice: -</p>
+        <p id="turn">Turn: Player 1</p>
+
+        <h3>Game Log</h3>
+        <div id="log"></div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
