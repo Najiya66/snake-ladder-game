@@ -4,35 +4,60 @@
     <title>Snake & Ladder Pro</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<h1>🐍 SNAKE & LADDER</h1>
+<!-- 🏠 HOME SCREEN -->
+<div id="homeScreen" class="home">
 
-<div class="container">
+    <h1>🐍 Snake & Ladder Game</h1>
 
-    <!-- LEFT: BOARD -->
-    <div id="board"></div>
+    <input id="p1name" placeholder="Player 1 Name">
+    <input id="p2name" placeholder="Player 2 Name">
 
-    <!-- RIGHT: SIDE PANEL -->
-    <div class="panel">
+    <button id="startBtn">Start Game 🎮</button>
 
-        <div class="player-box red">
-            <h3>Player 1</h3>
-            <p id="p1pos">Position: 1</p>
+</div>
+
+<!-- 🎮 GAME SCREEN -->
+<div id="gameScreen" class="hidden">
+
+    <h1>🐍 SNAKE & LADDER</h1>
+
+    <div class="container">
+
+        <!-- BOARD -->
+        <div id="board"></div>
+
+        <!-- PANEL -->
+        <div class="panel">
+
+            <div class="player-box red">
+                <h3 id="name1">Player 1</h3>
+                <p id="p1pos">Position: 1</p>
+            </div>
+
+            <div class="player-box green">
+                <h3 id="name2">Player 2</h3>
+                <p id="p2pos">Position: 1</p>
+            </div>
+
+            <!-- 🎲 CLICKABLE 3D DICE -->
+            <div class="dice-container" id="diceContainer">
+                <div id="diceCube" class="dice">
+                    <div class="face front">1</div>
+                    <div class="face back">6</div>
+                    <div class="face right">3</div>
+                    <div class="face left">4</div>
+                    <div class="face top">5</div>
+                    <div class="face bottom">2</div>
+                </div>
+            </div>
+
+            <p id="dice">Click Dice 🎲</p>
+            <p id="turn">Turn: Player 1</p>
+
         </div>
-
-        <div class="player-box green">
-            <h3>Player 2</h3>
-            <p id="p2pos">Position: 1</p>
-        </div>
-
-        <button onclick="rollDice()">🎲 Roll Dice</button>
-
-        <p id="dice">Dice: -</p>
-        <p id="turn">Turn: Player 1</p>
-
-        <h3>Game Log</h3>
-        <div id="log"></div>
 
     </div>
 
